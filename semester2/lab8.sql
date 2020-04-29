@@ -1,5 +1,6 @@
 use "TSQL2012";
 
+#1
 create table Department
 (
     id int auto_increment not null,
@@ -23,5 +24,47 @@ create table Employee
     position varchar(30) not null,
     department int not null ,
     primary key (id),
-    foreign key (department) references Department(id) on delete cascade
+    foreign key fk_employee_department (department) references Department(id) on delete cascade
 );
+
+#2
+insert into Department (dept_name, employees_number, street, building_num, room_num) values
+('Sales', 28, 'Karpenka Karogo, St.', '12/bis, letter A', 41),
+('Marketing', 17, 'Karpenka Karogo, St.', '12/bis, letter B', 36),
+('Support', 9, 'Karpenka Karogo, St.', '12/bis, letter F', 12),
+('Infrastructure', 4, 'Ve Val, St.', '256', 7),
+('Development', 10, 'Ve Val, St.', '256', 5);
+
+insert into Employee (first_name, last_name, birthday, salary, position, department) values
+('Joseph', 'Stalin', '1878-12-18', 3540.1, 'Senior System Administrator', (
+    select id from Department where dept_name = 'Infrastructure'
+)),
+('Adolf', 'Hitler', '1889-04-20', 2567.2, 'Team Lead', (
+    select id from Department where dept_name = 'Development'
+));
+
+#3
+create table Position
+(
+    id int auto_increment not null,
+    name varchar(30) not null,
+    primary key (id)
+);
+
+insert into Position (name) values ('Team Lead'), ('Senior System Administrator');
+
+alter table Employee add column position_id int not null after position;
+alter table Employee add foreign key fk_employee_position (position_id) references Position(id) on delete cascade;
+
+update Employee set position_id = (select id from Position where name = 'Senior System Administrator')
+where position = 'Senior System Administrator';
+update Employee set position_id = (select id from Position where name = 'Team Lead')
+where position = 'Team Lead';
+
+alter table Employee drop column position;
+
+#4
+alter table Employee drop foreign key fk_employee_department;
+alter table Department change column id department_id int auto_increment not null;
+alter table Employee add foreign key fk_employee_department (department)
+    references Department(department_id) on delete cascade;
