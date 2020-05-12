@@ -1,0 +1,15 @@
+shell: bash
+commands:
+  run:
+    description: Runs PostgreSQL server
+    cmd: docker-compose up -d database
+  stop:
+    description: Stops PostgreSQL server
+    cmd: docker-compose down
+  psql:
+    description: Runs PostgreSQL CLI
+    cmd: |
+      docker-compose up -d database && \
+      sleep 1 && \
+      docker exec -it database psql university postgres && \
+      docker-compose down

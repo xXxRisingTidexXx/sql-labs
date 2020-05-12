@@ -1,0 +1,17 @@
+version: '3.7'
+services:
+  database:
+    container_name: database
+    image: postgres:11
+    restart: 'always'
+    ports:
+      - 5432:5432
+    volumes:
+      - database_data:/var/lib/postgresql/data
+    environment:
+      POSTGRES_DB: university
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      PGDATA: /var/lib/postgresql/data
+volumes:
+  database_data:

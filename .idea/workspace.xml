@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="4648240f-2630-4097-b45a-6e5ec7228042" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/dpetrakivskyi.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sql-labs.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sql-labs.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1bnWo6dfhzVlp31e69cHbCcJXI0" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DBE.Init.BalloonShown" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$USER_HOME$" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="342" y="175" width="671" height="416" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1589269926298">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="342" y="175" width="671" height="416" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1366.768@0.0.1366.768" timestamp="1589269926298" />
+    <state x="440" y="214" width="476" height="337" key="#com.intellij.tools.ToolEditorDialog" timestamp="1589269464763">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="440" y="214" width="476" height="337" key="#com.intellij.tools.ToolEditorDialog/0.0.1366.768@0.0.1366.768" timestamp="1589269464763" />
+    <state x="172" y="18" key="SettingsEditor" timestamp="1589270722074">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="172" y="18" key="SettingsEditor/0.0.1366.768@0.0.1366.768" timestamp="1589270722074" />
+  </component>
+</project>
